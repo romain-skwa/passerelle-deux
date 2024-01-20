@@ -6,7 +6,7 @@
     ?>
         <section class="ensemble text-success-emphasis w-50 p-3 mx-auto">
             
-            <article class="article  p-3  bg-warning text-dark rounded-top-4 " style="--bs-bg-opacity: .75;">
+            <article class="article  p-3  bg-cerise text-dark rounded-top-4 " style="--bs-bg-opacity: 1;">
                 <p>
                     <b><?= $article['title'] ?></b>
                     <br>
@@ -21,10 +21,36 @@
                 </p>   
             </article>
                 
-            <div class="w-100 p-3 bg-warning text-dark rounded-bottom-4" style="--bs-bg-opacity: .50;"><!--  On insère les commentaires des articles -->
-                <?= require('functions/getComFunctionWebmaster.php') ?><!-- mais ce code est réservé à l'administrateur car il comporte la possibilité de supprimer les commentaires -->
-            </div>
+            <div class="w-100 p-3 bg-warning text-dark rounded-bottom-4" style="--bs-bg-opacity: 1;"><!--  On insère les commentaires des articles -->
+                <?php // pourquoi suis-je obligé d'écrire ce code en entier ici ? 
+                    // Pourquoi je me retrouve avec des  1 partout quand j'utilise un REQUIRE ?
+                    $getCommentaries = getCommentaries();
 
+                    foreach($getCommentaries as $publishCommentaries){
+                        if($publishCommentaries['whichArticle'] == $article['id']) {
+                        ?>
+                
+                            <p>
+                            <?= $publishCommentaries['commentary'] ?>
+                <a href="index.php?page=deleteComments&id=<?= $publishCommentaries['id'] ?>&name=<?= $publishCommentaries['name'] ?>&titleArticle=<?= $article['title'] ?>">
+                        <input name="delete" type="submit" id="delete" value="Supprimer ce commentaire" /></a>
+                <br>
+
+                <span>
+                    Commentaire écrit par <b><?= $publishCommentaries['name'] ?></b>
+                </span> 
+                            </p>
+                
+                    <?php
+                        }
+                    }        
+                    ?>
+            </div>
+            <!--  C'est le REQUIRE ci-dessous que j'utilisais 
+                <div class="w-100 p-3 bg-warning text-dark rounded-bottom-4" style="--bs-bg-opacity: .50;">  On insère les commentaires des articles 
+                < ?= require('functions/getCommentsFunction.php') ?>
+                </div>
+                -->
         </section>
 <?php
     }

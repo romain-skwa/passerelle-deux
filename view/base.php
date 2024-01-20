@@ -12,11 +12,11 @@
                     break;
 
                 case 'error':
-                    echo'<title>Non identifié</title>';
+                    echo '<title>Non identifié</title>';
                     break;
 
                 default: 
-                    echo'<title>Bienvenue</title>';
+                    echo '<title>Bienvenue</title>';
         }
     }
 ?>
@@ -25,18 +25,20 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="public/design/default.css" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="public/design/changementBootstrap.css" />
+       <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
     </head>
 
-    <body>
+    <body class= bg-menthe>
 
         <header class="rounded-4">
 
-            <div> 
-                <h1>Projet passerelle deux</h1>
+            <div class="haut_gauche"> 
+                <img class="petit_logo" src="../public/asset/menthe.jpg" alt="Praline Menthe Cerise">
+                <h1>Praline Menthe Cerise</h1>
             </div>
 
-                <div class="login">
+                <div class="haut_droite">
                     <?php
                         if(!isset($_GET['page'])){ // Quand on arrive sur le site, il n'y a pas le mot clef "page" inclus dans la barre d'adresse
 
