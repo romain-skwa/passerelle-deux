@@ -8,6 +8,7 @@
         <section class="ensemble text-success-emphasis w-50 p-3 mx-auto">
             <article class="article  p-3  bg-cerise text-dark rounded-top-4 " style="--bs-bg-opacity: 1;">
                 <p>
+                    Un article<br>
                     <b><?= $article['title'] ?></b>
                     <br>
                     <?= $article['contenu'] ?>
