@@ -9,11 +9,11 @@
       
             <a href="index.php?page=webmaster">Retour à la page de l'administrateur.</a>
             
-            <?= require('functions/deleteArticleFunction.php'); // Connexion à la table "article" ?> 
+            <?php require('functions/deleteArticleFunction.php'); // Connexion à la table "article" ?> 
         </section>
 
         <section>
-            <?= include('view/articlesView/articlesListWebmaster.php') // Liste articles de la page webmaster ?> 
+            <?php  include('view/articlesView/articlesListWebmaster.php') // Liste articles de la page webmaster ?> 
         </section>
 <?php 
     $content = ob_get_clean();

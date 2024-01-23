@@ -5,26 +5,31 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 5px 10px grey;
+    box-shadow: 0px 5px 10px rgb(43, 41, 41);
 }
+
 h1{
     font-size: 3rem;
     text-transform: uppercase;          
     margin-left: 2vw;  
 }
+
 .haut_gauche{
     display: flex;
     align-items: center;
     margin-left: 2rem;
 }
+
 .petit_logo{
     height: 7vh;
     border-radius: 50%;
     transition: 0.3s;
 }
+
 .petit_logo:hover{
     transform: scale(1.5) translate(20%, 20%);
 }
+
 .haut_droite{
     width: 40vw;
     display: flex;
@@ -35,9 +40,11 @@ h1{
     width: 38vw; height: 3vh;
     display: flex;
 }
+
 .loginForm div{
     margin-left: 1rem;
 }
+
 .disconnection{
     margin-right: 2rem;
 }
@@ -53,16 +60,23 @@ h1{
     border-radius: 5px;
     transition-duration: 0.2s;
 }
+
 .username:focus, .password:focus{
     box-shadow: 5px 5px 5px grey;
     border:solid 3px #ffc107;
     outline:none;
     transform: translate(-5px, -5px);
 }
+
 .rectangle1, .rectangle2, .rectangle3, .rectangle4 {
     height: 35px;
     display: flex;
     align-items: center;
+}
+
+.rectangle4 a{
+    font-size: 1.1rem;
+    color: azure;
 }
 
 .identifier2{

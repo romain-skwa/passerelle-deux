@@ -8,7 +8,7 @@
         </section>
 
         <section>
-            <?= require('functions/writeCommentaryFunction.php') // La fonction servant à écrire un commentaire ?>
+            <?php require('functions/writeCommentaryFunction.php') // La fonction servant à écrire un commentaire ?>
         </section>
 
         <section>

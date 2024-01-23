@@ -21,7 +21,7 @@
         require_once('model/checkFirst.php');
         // Quand le visiteur du site n'a pas encore essayé de se connecter...        
         function first(){
-              require_once('view/firstView.php');
+              include('view/firstView.php');
         }
         
         require_once('functions/getArticleFunction.php');
@@ -39,15 +39,15 @@
         }
         */
         function updateArticle(){
-                require_once('view/changeArticle/updateArticle.php');
+                include('view/changeArticle/updateArticle.php');
         }
 
         function articleChanged(){
-                require_once('view/changeArticle/articleChanged.php');
+                include('view/changeArticle/articleChanged.php');
         }
 
         function deleteArticle(){
-                 require_once('view/delete/deleteArticleView.php');
+                include('view/delete/deleteArticleView.php');
                 }
 
         function deleteComments(){

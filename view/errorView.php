@@ -3,12 +3,12 @@
 
     ?>
         
-        <?= require('view/loginFormView.php') ?>
+        <?php require('view/loginFormView.php') ?>
 
         <section class="container">
         
             <h2>Euh...</h2>
-            <p><?= $error ?></p>
+            <p><?php echo $error ?></p>
 
         </section>
 <?php 

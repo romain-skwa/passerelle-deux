@@ -3,7 +3,7 @@
     ?>
 
         <section class="container">
-            <?= require('functions/deleteCommentsFunction.php'); // Connection à la table "commentaries" ?>
+            <?php require('functions/deleteCommentsFunction.php'); // Connection à la table "commentaries" ?>
             
             <h2>Suppression de commentaire</h2>
             <h3>Le commentaire écrit par <u><?=($_GET['name'])?></u> sous l'article "<b><?=($_GET['titleArticle'])?></b>" vient d'être supprimé...</h3>

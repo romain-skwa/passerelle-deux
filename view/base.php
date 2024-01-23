@@ -31,7 +31,7 @@
 
     <body class= bg-menthe>
 
-        <header class="rounded-4">
+        <header class="rounded-bottom-4">
 
             <div class="haut_gauche"> 
                 <img class="petit_logo" src="../public/asset/menthe.jpg" alt="Praline Menthe Cerise">
@@ -55,7 +55,8 @@
                 </div>
 
         </header>
-        <?= $content ?>            
+        
+        <?php echo $content ?>            
 
     </body>
 </html>
