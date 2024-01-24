@@ -20,7 +20,7 @@
         </section>
 
         <section>
-            <?= include('view/articlesView/articlesListUsers.php') // Liste des articles vue par les utilisateurs ?> 
+            <?php include('view/articlesView/articlesListUsers.php') // Liste des articles vue par les utilisateurs ?> 
         </section>
 <?php 
     $content = ob_get_clean();

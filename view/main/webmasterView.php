@@ -27,7 +27,7 @@
                     </p>
                     <p>
                         <label for="article">Article</label><br>
-                        <textarea name="article" id="article" cols="90" rows="10"></textarea><!-- Important de tout coller comme ceci. Dans le cas contraire, ça donne n'importe quoi dans le champ. -->
+                        <textarea name="article" id="article" cols="75" rows="10"></textarea><!-- Important de tout coller comme ceci. Dans le cas contraire, ça donne n'importe quoi dans le champ. -->
                     </p>
                     <p class="aDroite">
                         <input type="submit" value="Envoyer l'article">
@@ -39,11 +39,11 @@
         </section>
 
         <section>
-            <?= include('view/articlesView/articlesListWebmaster.php') 
+            <?php include('view/articlesView/articlesListWebmaster.php') 
             // Liste des articles avec les fonctions disponibles pour le webmaster
             ?> 
         </section>
-<?php 
+<?php
     $content = ob_get_clean();
 
     require('view/base.php'); // template

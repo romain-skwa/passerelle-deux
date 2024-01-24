@@ -1,6 +1,6 @@
 <p class="w-50 mx-auto m-4">Voici la liste des articles :</p> <!-- Affichage des articles visibles quand l'utilisateur n'est pas connecté -->
 
-<?php           
+<?php
     $articles = getArticle();
     foreach($articles as $article){
         ?>
@@ -11,7 +11,7 @@
                     <b><?= $article['title'] ?></b>
                     <br>
                     <?= $article['contenu'] ?>
-                </p>   
+                </p>
             </article>
 
             <div class="w-100 p-3 bg-warning text-dark rounded-bottom-4" style="--bs-bg-opacity: 1;"><!--  On insère les commentaires des articles -->

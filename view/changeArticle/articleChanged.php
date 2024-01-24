@@ -9,13 +9,13 @@
             <h2>L'article a maintenant été changé</h2>
             <h3>Vous devriez être content...</h3>
       
-            <?= require('functions/updateArticleFunction.php');?>
+            <?php require('functions/updateArticleFunction.php');?>
         </section>
 
         <section>
-            <?= include('view/articlesView/articlesListWebmaster.php')?> 
+            <?php include('view/articlesView/articlesListWebmaster.php')?>
         </section>
-<?php 
+<?php
     $content = ob_get_clean();
 
     require('view/base.php');

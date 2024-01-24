@@ -1,11 +1,11 @@
-<?php 
+<?php
         ob_start();
     ?>
 
         <section class="container">
             
             <h2>Ici, on supprime les articles</h2>
-            <h3>En fait vous avez déjà supprimé l'article : <?=($_GET['title'])?>...</h3>
+            <h3>En fait vous avez déjà supprimé l'article intitulé : <?=($_GET['title'])?>...</h3>
       
             <a href="index.php?page=webmaster">Retour à la page de l'administrateur.</a>
             
@@ -15,7 +15,7 @@
         <section>
             <?php  include('view/articlesView/articlesListWebmaster.php') // Liste articles de la page webmaster ?> 
         </section>
-<?php 
+<?php
     $content = ob_get_clean();
 
     require('view/base.php');

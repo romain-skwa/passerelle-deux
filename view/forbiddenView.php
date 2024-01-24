@@ -9,17 +9,17 @@
 
         <section class="loginForm">
                 <?php
-                        if(!isset($_GET['user']) && !isset($_GET['webmaster'])) { 
+                        if(!isset($_GET['user']) && !isset($_GET['webmaster'])) {
                         // Formulaire dans lequel l'utilisateur entre son identifiant et son mot de passe.
                                 require('loginFormView.php');                 
                         }
                 ?>
-        </section> 
+        </section>
        
         <section>
             <?= include('view/articlesView/articlesListNormal.php') // Affichage des articles ?> 
         </section>
-<?php 
+<?php
     $content = ob_get_clean();
 
     require('view/base.php');

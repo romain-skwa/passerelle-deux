@@ -1,6 +1,6 @@
 <p class="w-50 mx-auto m-4">Voici la liste des articles :</p>
 
-<?php           
+<?php
     $articles = getArticle();
         foreach($articles as $article){
     ?>
@@ -18,11 +18,11 @@
                         <input name="delete" type="submit" id="delete" value="Supprimer cet article" /></a>
                     <br>
                     <a href="index.php?page=update&edit=<?= $article['id'] ?>&ancientTitle=<?= $article['title'] ?>&ancientContent=<?= $article['contenu'] ?>">Modifier</a>
-                </p>   
+                </p>
             </article>
 
                 <div class="w-100 p-3 bg-warning text-dark rounded-bottom-4" style="--bs-bg-opacity: 1;"> <!--  On insère les commentaires des articles -->
-                <?php require('functions/getComFunctionWebmaster.php') ?>
+                <?php include('functions/getComFunctionWebmaster.php') ?>
                 </div>
         </section>
 <?php

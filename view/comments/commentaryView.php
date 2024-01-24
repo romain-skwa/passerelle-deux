@@ -1,4 +1,4 @@
-<?php 
+<?php
         ob_start();
     ?>
 
@@ -15,7 +15,7 @@
             <?= include('view/articlesView/articlesListUsers.php') // Liste articles vur par les utilisateurs ?> 
         </section>
 
-<?php 
+<?php
     $content = ob_get_clean();
 
     require('view/base.php'); // template

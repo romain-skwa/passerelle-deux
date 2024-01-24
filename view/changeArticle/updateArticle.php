@@ -40,7 +40,7 @@
         <section>
             <?= include('view/articlesView/articlesListWebmaster.php')?> 
         </section>
-<?php 
+<?php
     $content = ob_get_clean();
 
     require('view/base.php');

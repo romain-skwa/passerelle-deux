@@ -1,6 +1,6 @@
 <p class="w-50 mx-auto m-4">Voici la liste des articles :</p>
 
-<?php           
+<?php
     $articles = getArticle();
         foreach($articles as $article){
     ?>
@@ -19,11 +19,11 @@
                     -->
                     <a href="index.php?page=commentary&id=<?= $article['id'] ?>&title=<?= $article['title'] ?>&content=<?= $article['contenu'] ?>">Commenter cet article</a>
                     <br>
-                </p>   
+                </p>
             </article>
 
             <div class="w-100 p-3 bg-warning text-dark rounded-bottom-4" style="--bs-bg-opacity: 1;"> <!-- On insère les commentaires des articles  -->
-            <?php require('functions/getCommentsFunction.php') ?>
+            <?php include('functions/getCommentsFunction.php') ?>
             </div>
 
             
