@@ -35,7 +35,7 @@
 
             <div class="haut_gauche"> 
                 <img class="petit_logo" src="../public/asset/menthe.jpg" alt="Praline Menthe Cerise">
-                <h1>Praline Menthe Cerise</h1>
+                <h1 class="--bs-primary-text-emphasis">Praline Menthe Cerise</h1>
             </div>
 
                 <div class="haut_droite">
@@ -57,6 +57,6 @@
         </header>
         
         <?php echo $content ?>            
-
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     </body>
 </html>

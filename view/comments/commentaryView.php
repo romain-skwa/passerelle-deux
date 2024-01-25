@@ -12,7 +12,7 @@
         </section>
 
         <section>
-            <?= include('view/articlesView/articlesListUsers.php') // Liste articles vur par les utilisateurs ?> 
+            <?php include('view/articlesView/articlesListUsers.php') // Liste articles vur par les utilisateurs ?> 
         </section>
 
 <?php

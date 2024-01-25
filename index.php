@@ -64,5 +64,5 @@
         
                 catch(Exception $e){
                 $error = $e->getmessage();
-                require('view/errorView.php');
+                require_once('view/errorView.php');
         }

@@ -22,7 +22,7 @@
         <section>
             <?php include('view/articlesView/articlesListUsers.php') // Liste des articles vue par les utilisateurs ?> 
         </section>
-<?php 
+<?php
     $content = ob_get_clean();
 
     require('view/base.php'); // template

@@ -4,8 +4,7 @@
     $articles = getArticle();
         foreach($articles as $article){
     ?>
-        <section class="ensemble text-success-emphasis w-50 p-3 mx-auto">
-            
+        <section class="ensemble text-success-emphasis w-50 p-3 mx-auto">            
             <article class="article  p-3  bg-cerise text-dark rounded-top-4 " style="--bs-bg-opacity: 1;">
                 <p>
                     <b><?= $article['title'] ?></b>
@@ -22,7 +21,7 @@
             </article>
 
                 <div class="w-100 p-3 bg-warning text-dark rounded-bottom-4" style="--bs-bg-opacity: 1;"> <!--  On insère les commentaires des articles -->
-                <?php include('functions/getComFunctionWebmaster.php') ?>
+                    <?php include('functions/getComFunctionWebmaster.php') ?>
                 </div>
         </section>
 <?php

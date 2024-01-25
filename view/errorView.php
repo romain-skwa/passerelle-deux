@@ -1,4 +1,4 @@
-<?php        
+<?php
         ob_start();
 
     ?>
@@ -11,7 +11,7 @@
             <p><?php echo $error ?></p>
 
         </section>
-<?php 
+<?php
     $content = ob_get_clean();
 
     require('view/base.php');

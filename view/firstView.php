@@ -9,7 +9,7 @@
             <?php  include('view/articlesView/articlesListNormal.php') // Affichage des articles ?> 
         </section>
 
-<?php 
+<?php
     $content = ob_get_clean();
     require('view/base.php');
 ?>

@@ -1,7 +1,4 @@
-@import "bootstrap-5.3.2/scss/bootstrap";
-
-
-
+@import "bootstrap-5.3.2/scss/_variables";
 $theme-colors: (
-    'warning': purple,
-)
+    'primary': #000,
+);

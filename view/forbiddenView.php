@@ -17,7 +17,7 @@
         </section>
        
         <section>
-            <?= include('view/articlesView/articlesListNormal.php') // Affichage des articles ?> 
+            <?php include('view/articlesView/articlesListNormal.php') // Affichage des articles ?> 
         </section>
 <?php
     $content = ob_get_clean();
