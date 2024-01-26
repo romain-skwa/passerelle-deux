@@ -35,7 +35,7 @@
 
             <div class="haut_gauche"> 
                 <img class="petit_logo" src="../public/asset/menthe.jpg" alt="Praline Menthe Cerise">
-                <h1 class="--bs-primary-text-emphasis">Praline Menthe Cerise</h1>
+                <h1 class="bs-danger-text-emphasis">Praline Menthe Cerise</h1>
             </div>
 
                 <div class="haut_droite">
